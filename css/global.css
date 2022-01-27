@@ -76,6 +76,19 @@ body {
   font-weight: bold;
 }
 
+/* Header -- responsive */
+
+@media screen and (max-width: 1280px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 0.8rem;
+  }
+  .navigation__list {
+    margin-top: 1rem;
+  }
+}
+
 /* Header - Navigation */
 
 .navigation__list {
@@ -94,6 +107,7 @@ body {
 .navigation__item--active,
 .navigation__item:hover {
   transition: border-bottom 100ms ease-in-out;
+  border-bottom: 4px #db7a4e solid;
 }
 
 .navigation__item--get-started {
@@ -172,3 +186,5 @@ body {
 .footer__social-icon {
   height: 100%;
 }
+
+/* Footer -- responsive */
