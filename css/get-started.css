@@ -1,24 +1,9 @@
-@keyframes get-started-backgrounds {
-  0% {
-    background-image: url(../assets/iceland.jpg);
-    background-position: right center;
-  }
-  50% {
-    background-image: url(../assets/hawaii.jpg);
-    background-position: left center;
-  }
-  100% {
-    background-image: url(../assets/greece.jpg);
-    background-position: left center;
-  }
-}
-
 .get-started {
-  animation: get-started-backgrounds 20s ease-in-out infinite;
+  background-image: url(../assets/hawaii.jpg);
   background-position: center center;
   display: flex;
   justify-content: center;
-  transition: all 4s ease-in-out;
+  background-size: cover;
 }
 
 .get-started__title {
