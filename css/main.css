@@ -34,20 +34,6 @@
   min-width: 20%;
 }
 
-/* Hero -- responsive */
-
-@media screen and (max-width: 1280px) {
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    margin: 0;
-    text-align: center;
-    flex-direction: column;
-    padding: 1.5rem 1.5rem 0.8rem;
-  }
   .hero__info {
     order: 2;
   }
@@ -121,4 +107,41 @@
   font-size: 2rem;
   font-weight: 600;
   z-index: 2;
+}
+
+/* Hero -- responsive */
+
+@media screen and (max-width: 1280px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 0.8rem;
+  }
+
+/* Recommendations -- responsive */
+
+@media screen and (max-width: 1280px) {
+  .recommendations {
+    width: auto;
+    margin: 0;
+  }
+  .recommendations__title {
+    text-align: center;
+  }
+  .recommendations__card {
+    width: 80%;
+    height: 10rem;
+    margin-bottom: 3rem;
+    background-position: center;
+  }
+  .recommendations__link {
+    width: 80%;
+    height: 10rem;
+  }
 }

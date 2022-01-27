@@ -49,3 +49,25 @@
   padding: 1rem;
   margin-bottom: 1.5rem;
 }
+
+/* Destinations -- responsive */
+
+@media screen and (max-width: 1280px) {
+  .destinations {
+    width: auto;
+    margin: 0;
+  }
+  .destination__title {
+    text-align: center;
+    margin: 0;
+  }
+  .destination__list {
+    margin: 0;
+  }
+  .destination__card {
+    width: 80%;
+    margin: 1rem 2rem;
+    margin-bottom: 3rem;
+    background-position: center;
+  }
+}

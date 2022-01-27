@@ -76,19 +76,6 @@ body {
   font-weight: bold;
 }
 
-/* Header -- responsive */
-
-@media screen and (max-width: 1280px) {
-  .header {
-    width: 100%;
-    flex-direction: column;
-    padding: 1.5rem 1.5rem 0.8rem;
-  }
-  .navigation__list {
-    margin-top: 1rem;
-  }
-}
-
 /* Header - Navigation */
 
 .navigation__list {
@@ -188,3 +175,27 @@ body {
 }
 
 /* Footer -- responsive */
+
+/* Header -- responsive */
+
+@media screen and (max-width: 1280px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 0.8rem;
+  }
+  .navigation__list {
+    margin-top: 1rem;
+  }
+}
+
+/* card-list -- responsive */
+
+@media screen and (max-width: 1280px) {
+  .card-list {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
