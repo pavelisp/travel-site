@@ -34,24 +34,23 @@
   min-width: 20%;
 }
 
-  .hero__info {
-    order: 2;
-  }
-  .hero__title {
-    text-align: center;
-    font-size: 3rem;
-    width: auto;
-  }
-  .hero__copy {
-    width: auto;
-  }
-  .hero__image {
-    order: 1;
-    margin-bottom: 2rem;
-  }
-  .navigation__list {
-    margin-top: 1rem;
-  }
+.hero__info {
+  order: 2;
+}
+.hero__title {
+  text-align: center;
+  font-size: 3rem;
+  width: auto;
+}
+.hero__copy {
+  width: auto;
+}
+.hero__image {
+  order: 1;
+  margin-bottom: 2rem;
+}
+.navigation__list {
+  margin-top: 1rem;
 }
 
 /* Recommendations */

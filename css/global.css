@@ -176,13 +176,43 @@ body {
 
 /* Footer -- responsive */
 
+@media screen and (max-width: 1280px) {
+  .footer__background {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    margin: 0 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__section {
+    margin-bottom: 3rem;
+  }
+  .footer__title {
+    margin-bottom: 1rem;
+  }
+  .footer__schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__schedule-heading {
+    margin-bottom: 0.5rem;
+  }
+  .footer__schedule-days {
+    margin: 0 0 1rem;
+  }
+}
+
 /* Header -- responsive */
 
 @media screen and (max-width: 1280px) {
   .header {
     width: 100%;
     flex-direction: column;
-    padding: 1.5rem 1.5rem 0.8rem;
+    padding: 1.5rem 0 0.8rem;
+    align-items: center;
   }
   .navigation__list {
     margin-top: 1rem;
