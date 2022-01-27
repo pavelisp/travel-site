@@ -1,0 +1,174 @@
+/* box sizing fix */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Global element styles & typography */
+
+body {
+  background-color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #335576;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Reusable components */
+
+.button {
+  color: white;
+  font-size: 1.15rem;
+  text-decoration: none;
+  background-color: #db7a4e;
+  padding: 0.75rem 2.5rem;
+  border-radius: 5rem;
+}
+
+.card-list {
+  width: 1280px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-list__card {
+  display: inline-block;
+  border: 1px solid rgba(201, 173, 173, 0.2);
+  border-radius: 5px;
+  width: 21.25rem;
+  height: 30rem;
+  background-color: #fff;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  transition: all 100ms ease-in-out;
+}
+
+.card-list__card:hover {
+  box-shadow: 0px 3px 3px rgba(56, 0, 49, 0.5);
+  border: 1px solid rgba(201, 173, 173, 1);
+}
+
+/* Header */
+
+.header {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+}
+
+.header__background {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 0 0.8rem;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.header__logo-wordmark {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #335576;
+  font-weight: bold;
+}
+
+/* Header - Navigation */
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item {
+  margin-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.navigation__item:last-of-type {
+  margin-right: 0;
+}
+
+.navigation__item--active,
+.navigation__item:hover {
+  transition: border-bottom 100ms ease-in-out;
+}
+
+.navigation__item--get-started {
+  border-bottom: 4px rgba(0, 0, 0, 0) solid;
+}
+
+.navigation__link {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+/* Footer */
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 calc((100vw - 1280px) / 2);
+}
+
+.footer__background {
+  width: 100%;
+  background-color: #fefaf5;
+  padding: 5rem 0 4rem;
+  z-index: 1;
+}
+
+.footer__title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 2.25rem;
+}
+
+.footer__info,
+.footer__schedule-info {
+  font-size: 1.2rem;
+}
+
+.footer__info-heading,
+.footer__schedule-heading {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #db7a4e;
+  margin-bottom: 1rem;
+}
+
+.footer__social-list {
+  height: 3rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer__schedule-days {
+  display: inline-block;
+  margin-right: 2.5rem;
+}
+
+.footer__social-item {
+  display: inline-block;
+  text-align: center;
+  margin-right: 1.5rem;
+}
+
+.footer__social-item:last-of-type {
+  margin-right: 0;
+}
+
+.footer__social-link {
+  display: inline-block;
+  text-decoration: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer__social-icon {
+  height: 100%;
+}

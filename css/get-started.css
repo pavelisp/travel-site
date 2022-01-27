@@ -1,0 +1,53 @@
+@keyframes get-started-backgrounds {
+  0% {
+    background-image: url(../assets/iceland.jpg);
+    background-position: right center;
+  }
+  50% {
+    background-image: url(../assets/hawaii.jpg);
+    background-position: left center;
+  }
+  100% {
+    background-image: url(../assets/greece.jpg);
+    background-position: left center;
+  }
+}
+
+.get-started {
+  animation: get-started-backgrounds 20s ease-in-out infinite;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  transition: all 4s ease-in-out;
+}
+
+.get-started__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.get-started__form {
+  padding: 2.5rem 5rem;
+  background-color: white;
+  margin: 5rem auto;
+  border: 1px solid rgba(201, 173, 173, 0.2);
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.get-started__button {
+  margin: 1rem 0;
+  cursor: pointer;
+  display: block;
+  border: none;
+}
+
+.get-started__button:hover {
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.get-started__form label[for="special-request"],
+#special-request {
+  margin: 1rem 0;
+  display: block;
+}
